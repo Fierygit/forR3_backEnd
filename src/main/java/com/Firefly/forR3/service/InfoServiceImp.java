@@ -29,7 +29,7 @@ public class InfoServiceImp implements InfoService {
         infoExample.createCriteria().andIdIsNotNull();
         List<Info> infos = infoMapper.selectByExample(infoExample);
 
-        infos.sort((Info o1, Info o2) -> (o1.getDate1().getTime() - o2.getDate1().getTime()) >= 0 ? 1 : -1);
+        infos.sort((Info o1, Info o2) -> (o1.getDate1().getTime() - o2.getDate1().getTime()) >= 0 ? -1 : 1);
         //   new Comparator<ProductionBatchInfo>() {
 //            @Override
 //            public int compare(ProductionBatchInfo o1, ProductionBatchInfo o2) {

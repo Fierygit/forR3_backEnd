@@ -11,17 +11,6 @@ public class Usr {
 
     private Date date;
 
-
-    public Usr(){
-
-    }
-    public Usr(Integer id, Integer uid, String ip, Date date) {
-        this.id = id;
-        this.uid = uid;
-        this.ip = ip;
-        this.date = date;
-    }
-
     public Integer getId() {
         return id;
     }

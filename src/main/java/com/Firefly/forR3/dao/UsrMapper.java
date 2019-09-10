@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-
 @Component
 @Mapper
 public interface UsrMapper {
